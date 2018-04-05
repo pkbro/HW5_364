@@ -1,1 +1,16 @@
 
+{% block content %}
+<h3>{{ item.description }}</h3>
+<form method="POST">
+  {{ form.hidden_tag() }}
+  {{ form.priority.label() }}{{ form.priority() }}
+  {{ form.submit() }}
+</form>
+
+<div>
+{% for message in get_flashed_messages() %}
+<strong>*** {{ message }} ***</strong>
+{% endfor %}
+</div>
+
+{% endblock %}
