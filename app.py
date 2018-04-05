@@ -7,6 +7,9 @@ from wtforms.validators import Required
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, MigrateCommand
 
+#Collaborated with: Will Chatterson
+
+
 ############################
 # Application configurations
 ############################
